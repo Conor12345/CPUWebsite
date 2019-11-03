@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registers - The CPU</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Registers</h1>
+    <p>
+    <div class=center><img src=https://computerscience.gcse.guru/wp-content/uploads/2016/04/Von-Neumann-Architecture-Diagram.jpg width=500></div>
+    <h2>What is a register?</h2>
+    <p>A register is a small amount of memory.  The CPU has many of these small "chunks" of memory, each with a different purpose.</p>
+    
+    
+    <h2>What types of register are in a CPU?</h2>
+    <table style="width:100%">
+      <col width="200">
+      <col width="150">
+      <tr>
+        <th>Name</th>
+        <th>Abbreviation</th> 
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>Memory Data Register</td>
+        <td>MDR</td> 
+        <td>This is where data from the RAM is stored to be used by the <a href=stored_program_concept.html>ALU</a> in the CPU.  Only data is stored here, any CPU instructions are stored in CIR.</td>
+      </tr>
+      <tr>
+        <td>Current Instruction Register</td>
+        <td>CIR</td> 
+        <td>If the data from <a href=memory.html>memory</a> is deemed to an instruction, it is put into to CIR.  This is how the other CPU components know what to do with the data.</td>
+      </tr>
+      <tr>
+        <td>Memory Address Register</td>
+        <td>MAR</td> 
+        <td>This is the register which stores the memory address which the <a href=buses.html> buses</a> needed to move to the MDR or CIR.  Each <a href=memory.html>memory</a> location has its own address which the address bus can select, allowing the data bus to retrieve the data.  This process is also reversed to store data into memory.</td>
+      </tr>
+      <tr>
+        <td>Status Register</td>
+        <td>SR</td> 
+        <td>The status register stores information about the CPU as a whole to ensure everything is co-ordinated and working correctly.  If any of the components of the CPU have an error the status register is changed to alert the rest of the CPU components.</td>
+      </tr>
+      <tr>
+        <td>Program Counter</td>
+        <td>PC</td> 
+        <td>The program counter is used to keep the whole CPU synchronized around the same <a href=memory.html> memory </a>address.  The PC increments by one every time the CPU is finished with a memory location to instruct the process to being again on the next memory location.</td>
+      </tr>
+    </table>
+    <p>To learn about how the CPU uses registers click here. - <a href=stored_program_concept.html>Stored Program Concept</a> </p>
+    <br>
+    <div class=center>
+      <a href="index.html">Return Home</a>
+    </div>
+    <br>
+  </body>
+</html>
+ 
